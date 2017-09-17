@@ -27,6 +27,7 @@ public class Main {
                 A.addAndStats();
                 break;
             case 2:
+                B.staircase();
                 break;
             case 3:
                 break;
