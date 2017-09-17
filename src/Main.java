@@ -12,7 +12,7 @@ public class Main {
         System.out.println("This is the menu to my homework:\nPlease choose which part (1-4) you want to load:\n");
         Scanner scin = new Scanner(System.in);
         int a = scin.nextInt();
-            System.out.printf("Loading " + a);
+        System.out.printf("Loading " + a);
         for (int i = 0; i < 3; i++) {
             System.out.printf(".");
             try {
@@ -21,5 +21,7 @@ public class Main {
                 e.printStackTrace();
             }
         }
+        FreshScreen.freshScreen();
+
     }
 }
