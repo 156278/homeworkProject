@@ -35,6 +35,7 @@ public class Main {
                     C.diagSum();
                     break;
                 case 4:
+                    D.convTime();
                     break;
 
 

@@ -32,5 +32,13 @@ public class B {
             }
             System.out.println();
         }
+        try {
+            Thread.sleep(7000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        FreshScreen.freshScreen();
     }
+
 }
+
