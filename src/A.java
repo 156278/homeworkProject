@@ -1,6 +1,7 @@
 import com.sun.deploy.util.ArrayUtil;
 
 import java.util.*;
+
 import static java.lang.Math.*;
 
 import static com.sun.org.apache.xalan.internal.lib.ExsltMath.power;
@@ -48,8 +49,14 @@ public class A {
 
         System.out.println("The maximum value entered was: " + max);
         System.out.println("The minimum value entered was: " + min);
-        System.out.println("The arithmetic average is: " + ((double)a / (double)ints.size()));
-        System.out.println("The geometric average is: " + Math.pow((double)a,1.0/ints.size()));
+        System.out.println("The arithmetic average is: " + ((double) a / (double) ints.size()));
+        System.out.println("The geometric average is: " + Math.pow((double) a, 1.0 / ints.size()));
+        try {
+            Thread.sleep(15000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        FreshScreen.freshScreen();
     }
 
 }

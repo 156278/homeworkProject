@@ -35,8 +35,13 @@ public class C {
             c += matr[i][a - i - 1];
 
         }
-        System.out.println("\nThe sum of diagonal numbers minus the sum of the other diagonal numbers equals: " + (b - c)+ "\n");
-
+        System.out.println("\nThe sum of diagonal numbers minus the sum of the other diagonal numbers equals: " + (b - c) + "\n");
+        try {
+            Thread.sleep(7000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        FreshScreen.freshScreen();
     }
 
 }
