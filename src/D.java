@@ -12,7 +12,10 @@ public class D {
         timeS = timeStr.substring(6, 8);
         timeAoP = timeStr.substring(8, 10);
         if (timeAoP.equals("PM")) {
-            timeH = String.valueOf(Integer.valueOf(timeH) + 12);
+            timeH = (Integer.valueOf(timeH) != 12) ? String.valueOf(Integer.valueOf(timeH) + 12) : timeH;
+        } else {
+            timeH = (Integer.valueOf(timeH) != 12) ? timeH : "00";
+
         }
         System.out.println("Reformated, your time now looks like this:\n" + timeH + ":" + timeM + ":" + timeS + " Uhr");
         try {
